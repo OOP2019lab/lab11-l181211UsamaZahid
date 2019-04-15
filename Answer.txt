@@ -1,0 +1,21 @@
+Ex 6:
+a) So that the variables 'first_name' and 'last_name' of class 'Person' cannot be accessed in child Class and are inherited as hidden variables.
+b) 'Person::first_name' cannot access private member declared in class 'Person'
+   'Person::last_name' cannot access private member declared in class 'Person'
+c) Both variables have been inherited as hidden and cannot be directly accessed by the child Class.
+
+Ex 8:
+By changing inheritance to protected all previous inherited public members and functions from the parent Class are inherited as protected instead of as public in the child Class.
+There is no effect on protected and private members.
+This mean that all public functions and members of parent Class are directly inaccessible in the main code.
+e.g, s.printInformation() will not work as printInformation() is inherited as protected from class Person by class Student.
+They can still be called if they are called in a public function of the child Class.
+In case of this code no effect is seen on main code as no public function of parent class is called by declared child class in main code.
+
+Ex 9:
+By changing inheritance to private all previous inherited public and protected members and functions from parent Class are inherited as private in the child Class.
+The private members of parent Class are kept as hidden in parent Class and altogether do not exist in chidl Class.
+This means that all public functions and members of parent Class are inaccessible in the main code.
+e.g, s.printInformation() will not work as printInformation() is inherited as private from class Person by class Student.
+They can still be called if they are called in a public function of the child Class.
+In case of this code no effect is seen on main code as no public function of parent class is called by declared child class in main code. 
